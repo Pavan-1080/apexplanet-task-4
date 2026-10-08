@@ -1,0 +1,183 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #f5f7fb;
+    color: #212529;
+}
+
+/* Navbar */
+
+.navbar {
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+}
+
+.navbar-brand {
+    letter-spacing: 0.3px;
+}
+
+/* Landing Page */
+
+.min-vh-75 {
+    min-height: 75vh;
+}
+
+.display-4 {
+    line-height: 1.1;
+}
+
+section {
+    background: linear-gradient(135deg, #f8f9fa, #eef2f7);
+}
+
+.card {
+    border-radius: 16px;
+}
+
+.card-body {
+    border-radius: 16px;
+}
+
+/* Buttons */
+
+.btn {
+    border-radius: 8px;
+    transition: all 0.2s ease;
+}
+
+.btn:hover {
+    transform: translateY(-1px);
+}
+
+/* Dashboard Cards */
+
+.dashboard-card {
+    border: none;
+    border-radius: 16px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.dashboard-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Profile / Form Cards */
+
+.profile-card {
+    max-width: 700px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 32px;
+    border-radius: 16px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+.form-control,
+.form-select {
+    border-radius: 8px;
+    padding: 10px 12px;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: #6c757d;
+    box-shadow: 0 0 0 0.2rem rgba(108, 117, 125, 0.15);
+}
+
+/* Tables */
+
+.table {
+    margin-bottom: 0;
+}
+
+.table th {
+    white-space: nowrap;
+}
+
+.table td {
+    vertical-align: middle;
+}
+
+/* Badges */
+
+.badge {
+    padding: 6px 9px;
+    border-radius: 6px;
+}
+
+/* Pagination */
+
+.pagination .page-link {
+    color: #212529;
+    border-radius: 6px;
+    margin: 0 2px;
+}
+
+.pagination .active .page-link {
+    background-color: #212529;
+    border-color: #212529;
+    color: #ffffff;
+}
+
+/* Alerts */
+
+.alert {
+    border-radius: 10px;
+}
+
+/* Footer */
+
+footer {
+    margin-top: 40px;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+
+    .display-4 {
+        font-size: 2.4rem;
+    }
+
+    .profile-card {
+        padding: 22px;
+    }
+
+    .navbar .container {
+        gap: 10px;
+    }
+
+    .navbar-brand {
+        font-size: 1rem;
+    }
+
+    .table {
+        font-size: 0.9rem;
+    }
+
+}
+
+@media (max-width: 576px) {
+
+    .display-4 {
+        font-size: 2rem;
+    }
+
+    .profile-card {
+        padding: 18px;
+    }
+
+    .btn-lg {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+}

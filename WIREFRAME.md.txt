@@ -1,0 +1,131 @@
+# Inventory Management System - Wireframe
+
+## 1. Login Page
+
+```text
++--------------------------------------+
+|        INVENTORY MANAGER             |
+|                                      |
+|  Username / Email                    |
+|  [____________________________]      |
+|                                      |
+|  Password                            |
+|  [____________________________]      |
+|                                      |
+|          [ LOGIN ]                   |
+|                                      |
+|  Don't have an account? Register     |
++--------------------------------------+
+
++------------------------------------------------+
+| Inventory Manager        User      Logout      |
++------------------------------------------------+
+|                                                |
+| Welcome, Admin                                 |
+|                                                |
+| +------------+ +------------+ +------------+  |
+| | Products   | | Quantity   | | Categories |  |
+| |     10     | |     75     | |      4     |  |
+| +------------+ +------------+ +------------+  |
+|                                                |
+|        [ View Products ] [ Add Product ]       |
+|                                                |
++------------------------------------------------+
+
++------------------------------------------------+
+| Inventory Manager       Admin       Logout     |
++------------------------------------------------+
+|                                                |
+| ADMIN PANEL                                    |
+|                                                |
+| +------------+ +------------+ +------------+  |
+| | Products   | | Quantity   | | Inventory  |  |
+| |     10     | |     75     | | ₹50,000    |  |
+| +------------+ +------------+ +------------+  |
+|                                                |
+| [ Manage Products ] [ Add Product ]            |
+|                                                |
+| LOW STOCK PRODUCTS                             |
+| +--------------------------------------------+ |
+| | Product       | Category       | Quantity   | |
+| +--------------------------------------------+ |
+| | Headphones   | Electronics    |     3      | |
+| +--------------------------------------------+ |
++------------------------------------------------+
+
++------------------------------------------------+
+| Products                         [Add Product] |
++------------------------------------------------+
+|                                                |
+| Search: [________________]                     |
+| Category: [All Categories ▼] [Search]          |
+|                                                |
+| +----------------------------------------------------------+
+| | ID | Product | Category | Price | Qty | Actions          |
+| +----------------------------------------------------------+
+| | 1  | Product | Electronics | ₹999 | 10 | Edit | Delete  |
+| +----------------------------------------------------------+
+|                                                |
+|             [Previous] [1] [2] [Next]         |
++------------------------------------------------+
+
++--------------------------------------------+
+|              ADD PRODUCT                   |
+|                                            |
+| Product Name                               |
+| [________________________________]         |
+|                                            |
+| Category                                    |
+| [________________________________]         |
+|                                            |
+| Price              Quantity                |
+| [____________]     [____________]           |
+|                                            |
+| Description                                |
+| [________________________________]         |
+| [________________________________]         |
+|                                            |
+|       [ Add Product ] [ Cancel ]           |
++--------------------------------------------+
+
+User Roles
+User
+- Login and logout
+- View dashboard
+- View products
+- Search products
+- Filter products by category
+- Use pagination
+Admin
+- All user permissions
+- Add products
+- Edit products
+- Delete products
+- Access admin panel
+- View inventory statistics
+- Monitor low-stock products
+7. Main Use Cases
+User Login
+1. User enters username/email and password.
+2. System validates the credentials.
+3. System creates a session.
+4. User is redirected to the dashboard.
+Product Management
+1. Admin opens the Products page.
+2. Admin can add a new product.
+3. Admin can edit existing products.
+4. Admin can delete products.
+5. Product information is stored in MySQL.
+Product Search
+1. User enters a search term.
+2. System searches product names and descriptions.
+3. Matching products are displayed.
+Category Filtering
+1. User selects a category.
+2. System filters products by category.
+3. Matching products are displayed.
+Admin Monitoring
+1. Admin opens the Admin Panel.
+2. System calculates inventory statistics.
+3. System displays total products, quantity, categories, and inventory value.
+4. Low-stock products are displayed for monitoring.
